@@ -33,6 +33,6 @@ spec:
   - type: mysql
     metadata:
       queryValue: "5"
-      query: "SELECT trigger_uno FROM keda WHERE trigger_uno = '5';"
+      query: "SELECT trigger_uno FROM keda WHERE trigger_uno = '5'"
     authenticationRef:
       name: keda-trigger-auth-mysql-secret
