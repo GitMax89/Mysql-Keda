@@ -24,15 +24,31 @@ metadata:
   name: mysql-scaledobject
   namespace: default
 spec:
-  maxReplicaCount: 4
+  minReplicaCount: 1
+  maxReplicaCount: 3
   pollingInterval: 3  # Optional. Default: 30 seconds
-  cooldownPeriod:  5 # Optional. Default: 300 seconds
+  cooldownPeriod:  60  # Optional. Default: 300 seconds
+  advanced:
+    horizontalPodAutoscalerConfig:
+      behavior:
+        scaleDown:
+          stabilizationWindowSeconds: 30
+          policies:
+          - type: Pods
+            value: 1
+            periodSeconds: 60
+        scaleUp:
+          stabilizationWindowSeconds: 0
+          policies:
+          - type: Pods
+            value: 1
+            periodSeconds: 60
   scaleTargetRef:
     name: mysql-deployment
   triggers:
   - type: mysql
     metadata:
-      queryValue: "5"
-      query: "SELECT DISTINCT trigger_uno FROM keda WHERE trigger_uno = '5'"
+      queryValue: '8'
+      query: "SELECT DISTINCT trigger_uno FROM keda WHERE trigger_uno > '10'"
     authenticationRef:
       name: keda-trigger-auth-mysql-secret

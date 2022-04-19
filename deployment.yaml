@@ -30,6 +30,11 @@ spec:
               secretKeyRef:
                 name:  mysql-secret
                 key:  mysql-password
+          - name:  MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name:  mysql-secret
+                key:  user-password
       volumes:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
