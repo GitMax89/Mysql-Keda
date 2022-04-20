@@ -11,4 +11,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/home/parallels/Kubernetes/deployment/mysql/volume"
+    path: "/your/path"
