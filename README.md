@@ -15,17 +15,19 @@ __________________________________
 Keda is a plug-in integrated in kubernetes starting from version 1.20
 
 you can find out if it is installed in your version of microk8s by typing the following command:
-
+```sh
 <i>state of the microk8 | grep keda</i>
+```
 
 if your output looks like this:
-
+```sh
 <i>keda # Kubernetes based event-based autoscaling</i>
+```
 
 you can enable it by simply typing:
-
+```sh
 <i>microk8s enable keda</i>
-
+```
 __________________________________
 
 <b>N.B</b>
@@ -49,10 +51,13 @@ the table and the default values ​​entered will not cause the mysql object t
 
 1 - install or run microk8s cluster<br>
 2 - insert your path on "deployment/install/mysql-pv.yaml" at this line:<br>
+```sh    
     </i>..</i><br>
        </i>hostPath:</i><br>
        </i>path: "/your/path"</i><br>
-    </i>..</i><br>	
+    </i>..</i><br>
+```
+	
 3 - run script ./install.sh for install config & mysql<br>
 4 - import db/data.sql on Mysql POD or connect to this with gui es.DBeaver and run script<br> 
 5 - run mysql-string.sh for insert mysql connection string on Keda HPA Service
