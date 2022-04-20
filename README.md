@@ -41,13 +41,16 @@ __________________________________
 <b>NOTICE</b>
 
 The whole project was run using the "default" kubernetes base nampespace.<br>
-If you intend to use scripts you must insert the option "-n your-namespace" in the commands
+If you intend to use scripts you must insert the option "-n your-namespace" in the commands<br>
+
+the table and the default values ​​entered will not cause the mysql object to scale. It is necessary to set a value beyond the threshold greater than 8 to obtain an event.
 
 <b>HOW TO INSTALL</b>
 
 1 - install or run microk8s cluster<br>
 2 - run script ./install.sh for install config & mysql<br>
-3 - run mysql-string.sh for insert mysql connection string on Keda HPA Service
+3 - import db/data.sql on Mysql POD or connect to this with gui es.DBeaver and run script<br> 
+4 - run mysql-string.sh for insert mysql connection string on Keda HPA Service
 
 <b>UNINSTALL</b>
 
