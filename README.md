@@ -32,7 +32,7 @@ __________________________________
 
 If you need to install on edge devices with ARM, keda does not currently support this architecture, but should be integrated starting with version 2.7
 
-if you want to stay updated on the topic you can follow the following number:
+if you want to stay updated, follow this issue:
 
 https://github.com/kedacore/keda/issues/779#issuecomment-1063133713
 
