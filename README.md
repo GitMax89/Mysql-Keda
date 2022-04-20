@@ -16,7 +16,7 @@ Keda is a plug-in integrated in kubernetes starting from version 1.20
 
 you can find out if it is installed in your version of microk8s by typing the following command:
 ```sh
-state of the microk8 | grep keda
+microk8s status | grep keda
 ```
 
 if your output looks like this:
