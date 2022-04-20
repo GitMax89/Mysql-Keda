@@ -5,7 +5,7 @@ metadata:
   namespace: default
 type: Opaque
 data:
-  mysql_conn_str: cm9vdDpwYXNzd29yZEB0Y3AoMTAuMTUyLjE4My43MDozMzA2KS9rZWRh # base64 encoded value of mysql connectionString of format user:password@tcp(serviceip:3306)/stats_db
+  mysql_conn_str: mysqlstring # base64 encoded value of mysql connectionString of format user:password@tcp(serviceip:3306)/stats_db
 ---
 apiVersion: keda.sh/v1alpha1
 kind: TriggerAuthentication

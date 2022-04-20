@@ -10,6 +10,7 @@ To generate a scaleUP or scaleDOWN event you need to connect to the DB and manua
 
 __________________________________
 
+<b>GENERIC INFO</b>
 
 Keda is a plug-in integrated in kubernetes starting from version 1.20
 
@@ -27,7 +28,7 @@ microk8s enable keda
 
 __________________________________
 
-NB
+<b>N.B</b>
 
 If you need to install on edge devices with ARM, keda does not currently support this architecture, but should be integrated starting with version 2.7
 
@@ -37,15 +38,19 @@ https://github.com/kedacore/keda/issues/779#issuecomment-1063133713
 
 __________________________________
 
-NOTICE
+<b>NOTICE</b>
 
 The whole project was run using the "default" kubernetes base nampespace.
 If you intend to use scripts you must insert the option "-n your-namespace" in the commands
 
-HOW TO INSTALL
+<b>HOW TO INSTALL</b>
 
-./install.sh
+1 - install or run microk8s cluster
+2 - run script ./install.sh for install config & mysql
+3 - run mysql-string.sh for insert mysql connection string on Keda HPA Service
 
-REMOVAL OF SERVICE
+<b>UNINSTALL</b>
 
-./uninstall.sh
+1 - run ./uninstall.sh
+
+
