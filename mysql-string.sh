@@ -2,7 +2,7 @@
 
 
 SERVICE_IP=`microk8s.kubectl get svc | grep mysql | awk '{print $3}'`
-STRING=`echo -n "root:password@tcp("$SERVICE_IP":3306)/stats_db" | base64`
+STRING=`echo -n "root:password@tcp("$SERVICE_IP":3306)/keda" | base64`
 MY_FILE="./deployment/install/mysql-keda-hpa.yaml"
 OP=$(echo -n $SERVICE_IP | wc -c)
 
