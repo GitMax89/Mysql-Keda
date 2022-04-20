@@ -21,7 +21,7 @@ microk8s status | grep keda
 
 if your output looks like this:
 ```sh
-keda # Kubernetes based event-based autoscaling
+keda # Kubernetes based event-Driven Autoscaling
 ```
 
 you can enable it by simply typing:
