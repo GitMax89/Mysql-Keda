@@ -16,15 +16,15 @@ Keda is a plug-in integrated in kubernetes starting from version 1.20
 
 you can find out if it is installed in your version of microk8s by typing the following command:
 
-state of the microk8 | grep keda
+<i>state of the microk8 | grep keda</i>
 
 if your output looks like this:
 
-keda # Kubernetes based event-based autoscaling
+<i>keda # Kubernetes based event-based autoscaling</i>
 
 you can enable it by simply typing:
 
-microk8s enable keda
+<i>microk8s enable keda</i>
 
 __________________________________
 
