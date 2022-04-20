@@ -40,13 +40,13 @@ __________________________________
 
 <b>NOTICE</b>
 
-The whole project was run using the "default" kubernetes base nampespace.
+The whole project was run using the "default" kubernetes base nampespace.<br>
 If you intend to use scripts you must insert the option "-n your-namespace" in the commands
 
 <b>HOW TO INSTALL</b>
 
-1 - install or run microk8s cluster
-2 - run script ./install.sh for install config & mysql
+1 - install or run microk8s cluster<br>
+2 - run script ./install.sh for install config & mysql<br>
 3 - run mysql-string.sh for insert mysql connection string on Keda HPA Service
 
 <b>UNINSTALL</b>
