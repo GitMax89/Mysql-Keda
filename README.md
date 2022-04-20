@@ -29,14 +29,18 @@ __________________________________
 
 NB
 
-Keda does not currently support ARM but should be integrated starting with version 2.7
+If you need to install on edge devices with ARM, keda does not currently support this architecture, but should be integrated starting with version 2.7
+
+if you want to stay updated on the topic you can follow the following number:
+
+https://github.com/kedacore/keda/issues/779#issuecomment-1063133713
 
 __________________________________
 
 NOTICE
 
 The whole project was run using the "default" kubernetes base nampespace.
-If you intend to use scripts you must insert the option "-n <your namespace>" in the commands
+If you intend to use scripts you must insert the option "-n your-namespace" in the commands
 
 HOW TO INSTALL
 
