@@ -53,9 +53,9 @@ the table and the default values ​​entered will not cause the mysql object t
        </i>hostPath:</i><br>
        </i>path: "/your/path"</i><br>
     </i>..</i><br>	
-2 - run script ./install.sh for install config & mysql<br>
-3 - import db/data.sql on Mysql POD or connect to this with gui es.DBeaver and run script<br> 
-4 - run mysql-string.sh for insert mysql connection string on Keda HPA Service
+3 - run script ./install.sh for install config & mysql<br>
+4 - import db/data.sql on Mysql POD or connect to this with gui es.DBeaver and run script<br> 
+5 - run mysql-string.sh for insert mysql connection string on Keda HPA Service
 
 <b>UNINSTALL</b>
 
