@@ -38,7 +38,7 @@ NOTICE
 The whole project was run using the "default" kubernetes base nampespace.
 If you intend to use scripts you must insert the option "-n <your namespace>" in the commands
 
-COME INSTALL
+HOW TO INSTALL
 
 ./install.sh
 
